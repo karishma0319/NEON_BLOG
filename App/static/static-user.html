@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neon Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="banner">
+		<header>
+			<div class="banner">
+				<a class="logo" href="sign_up.html">Neon Blog</a>
+				<div class="navbar">
+
+					<ul>
+
+						<li><a href="/">Home</a></li>
+						<li><a href="/users">About Us</a></li>
+						<li><a href="/static/users">Request Form</a></li>
+
+					</ul>
+
+				</div>
+			</div>
+		</header>
+	</div>
+    
+    <div class="container" id="content">
+        <div class="row">
+            <p>
+                This is table is rendered on the Client. JavaScript code requests the data from <a href="/api/users">/api/users</a> and writes it to this page.
+            </p>
+        </div>
+        <div class="row">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Id</th><th>Username</th>
+                  </tr>
+                </thead>
+                <tbody id="result">
+                
+                <tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
